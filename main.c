@@ -172,7 +172,7 @@ int main ()
 node* head = NULL;
 char input[99];
 int index;
-int deletedNodes = 0;
+int insertedNodes = 0;
 while(1)
 {
 printf("\nwort eingeben: ");
@@ -191,7 +191,7 @@ break; }
                 break; }
     head = addAt(index, input, head);
     printList(head);
-    deletedNodes++;
+    insertedNodes++;
    }
     printf("\nAdded Nodes: %d", deletedNodes);
      printf("Size of list: %d\n", size(head));
